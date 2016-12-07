@@ -11,8 +11,51 @@
 	android:paddingTop="@dimen/activity_vertical_margin"
 	tools:context="com.example.aw.fakeshoppingcart.LoginActivity">
 
-	<TextView
+	<ToggleButton
+		android:text="ToggleButton"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="Hello World!"/>
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="47dp"
+		android:id="@+id/toggleButton"
+		android:textOff="Buyer Login"
+		android:textOn="Seller Login"
+		/>
+
+	<EditText
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:inputType="textPersonName"
+		android:text=""
+		android:hint="Username"
+		android:ems="10"
+		android:layout_marginTop="59dp"
+		android:id="@+id/usernameEditText"
+		android:layout_below="@+id/toggleButton"
+		android:layout_centerHorizontal="true"/>
+
+	<EditText
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:inputType="textPassword"
+		android:hint="Password"
+		android:ems="10"
+		android:id="@+id/passwordEditText"
+		android:layout_marginTop="35dp"
+		android:layout_below="@+id/usernameEditText"
+		android:layout_alignStart="@+id/usernameEditText"/>
+
+	<Button
+		android:text="Login"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="49dp"
+		android:id="@+id/button"
+		android:textColor="@android:color/background_light"
+		android:background="@color/colorPrimary"
+		android:onClick="login"
+		android:layout_below="@+id/passwordEditText"
+		android:layout_alignEnd="@+id/passwordEditText"
+		android:layout_alignStart="@+id/passwordEditText"/>
 </RelativeLayout>
