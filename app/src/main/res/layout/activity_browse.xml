@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:id="@+id/activity_browse"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:paddingBottom="@dimen/activity_vertical_margin"
-	android:paddingLeft="@dimen/activity_horizontal_margin"
-	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingBottom="0dp"
+	android:paddingLeft="0dp"
+	android:paddingRight="0dp"
 	android:paddingTop="@dimen/activity_vertical_margin"
 	tools:context="com.example.aw.fakeshoppingcart.BrowseActivity">
 
@@ -37,4 +38,37 @@
 		android:id="@+id/passwordTextView"
 		android:layout_below="@+id/usernameTextView"
 		android:layout_alignEnd="@+id/usernameTextView"/>
+
+	<ImageButton
+		android:layout_width="120dp"
+		android:layout_height="56dp"
+		app:srcCompat="@drawable/ic_shopping_cart_black_24dp"
+		android:id="@+id/cartTab"
+		android:layout_marginLeft="-8dp"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:tint="@color/colorAccent"
+		android:background="@android:color/background_light"/>
+
+	<ImageButton
+		android:layout_width="120dp"
+		android:layout_height="56dp"
+		app:srcCompat="@drawable/ic_store_mall_directory_black_24dp"
+		android:id="@+id/storeTab"
+		android:layout_marginRight="-8dp"
+		android:background="@android:color/background_light"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentStart="true"
+		android:tint="@color/colorPrimary"/>
+
+	<ImageButton
+		android:layout_width="120dp"
+		android:layout_height="56dp"
+		app:srcCompat="@drawable/ic_account_circle_black_24dp"
+		android:id="@+id/accountTab"
+		android:background="@android:color/background_light"
+		android:tint="@color/colorAccent"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentEnd="true"/>
+
 </RelativeLayout>
